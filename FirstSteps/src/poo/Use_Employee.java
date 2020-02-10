@@ -23,11 +23,12 @@ public class Use_Employee {
 		System.out.println(empleado3.Describe());
 		*/
 		
-		Employee[] misEmpleados = new Employee[3];
+		Employee[] misEmpleados = new Employee[4];
 		
 		misEmpleados[0] = new Employee("Juan Lopez", 85000, 1990,12,17);
 		misEmpleados[1] = new Employee("Ana Gómez", 85000, 1995,10,13);
 		misEmpleados[2] = new Employee("Maria Martin", 105000, 2002,03,27);
+		misEmpleados[3] = new Employee("Alejando Nugnes");
 		
 		for (int i = 0; i < misEmpleados.length; i++) {
 			
@@ -59,6 +60,12 @@ class Employee {
 		
 	}
 	
+	public Employee(String name) {
+		
+		this(name, 3000, 2000,01,01);
+		
+	}
+	
 	public String get_name() { // GETTER
 		return name;
 	}
@@ -74,7 +81,7 @@ class Employee {
 	public String Describe() {
 		return (
 				"Nombre: "+ name+"\n"+
-				"Sueldo: "+ salary+"\n"+
+				"Sueldo: $"+ salary+"\n"+
 				"Fecha de Alta: "+ altaContrato+"\n"
 				);
 	}
