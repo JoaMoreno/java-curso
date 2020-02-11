@@ -1,6 +1,6 @@
 package poo;
 
-public class Car {
+public class Coche {
 
 	// Encapsulacion
 	private int ruedas;
@@ -13,7 +13,7 @@ public class Car {
 	private boolean asientos_cuero, climatizador;
 	
 
-	public Car() {
+	public Coche() {
 
 		ruedas = 4;
 		largo = 700;
@@ -36,7 +36,7 @@ public class Car {
 				
 				tipo_asientos() +
 				tipo_climatizador() + 
-				set_peso_car()+"\n"+
+				set_peso_coche()+"\n"+
 				"El precio final es $"+precio_coche()
 				
 				);
@@ -104,7 +104,7 @@ public class Car {
 	}
 	
 	// SETTER + GETTER ( ! No recomendada )
-	public String set_peso_car() {
+	public String set_peso_coche() {
 		
 		int peso_carroceria = 500;
 		
